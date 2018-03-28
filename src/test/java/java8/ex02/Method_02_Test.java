@@ -61,6 +61,6 @@ public class Method_02_Test {
         
         String result = daoA.format();
 
-        "DaoA[20 persons]".equals(result);
+        assert "DaoA[20 persons]".equals(result);
     }
 }
