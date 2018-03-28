@@ -21,14 +21,9 @@ public class Method_02_Test {
         // TODO exemple de résultat : "[14 persons]", "[30 persons]"
         
         default String format(){
-           	int nbPerson = 0;
         	List<Person> person = findAll();
         	
-        	for (Person people : person){
-        		nbPerson += 1;
-        	}
-        	
-        	return ("[" + nbPerson + "]");
+        	return ("[" + person.size() + "]");
         }
     }
     // end::IDao[]
